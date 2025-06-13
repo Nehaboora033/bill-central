@@ -1,0 +1,14 @@
+import React from 'react'
+
+
+const Button = ({buttonText, buttonClass="" }) => {
+  return (
+      <button className={`${buttonClass} font-bold rounded-tr-[50px] rounded-br-[50px] rounded-bl-[50px] whitespace-nowrap flex items-center gap-2`}>{buttonText}
+          <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 14.3691L14 1.36914M14 1.36914V13.8491M14 1.36914H1.52" stroke="#00171F" stroke-width="1.93338" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+      </button>
+  )
+}
+
+export default Button

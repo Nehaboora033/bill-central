@@ -1,11 +1,12 @@
 import React from 'react'
 import logo from '../assets/images/svg/logo.svg'
+import Button from './common/Button'
 
 const Header = () => {
     return (
         //navbar
         <nav className='bg-[url(src/assets/images/svg/header-bg.png)] py-5'>
-            <div className='max-w-[1140px] mx-auto px-3 '>
+            <div className='max-w-[1140px] mx-auto px-3 flex items-center justify-between'>
                 <img src={logo} alt="logo" />
                 <div className='flex gap-5'>
                     <a href="" className='font-normal text-base text-white '>About</a>
@@ -14,14 +15,12 @@ const Header = () => {
                     <a href="" className='font-normal text-base text-white' >Testimonials</a>
                     <a href="" className='font-normal text-base text-white' >Why Us</a>
                     <a href="" className='font-normal text-base text-white' >FAQ</a>
-                    <a href=""> htllp</a>
+                    
                 </div>
-                <button class>
-                    Get Started
-                </button>
+                <Button buttonText="Get Started" buttonClass='!py-2 !bg-white !px-4'/>
             </div>
         </nav>
-
+        
     )
 }
 
