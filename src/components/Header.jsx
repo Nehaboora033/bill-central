@@ -12,7 +12,7 @@ const Header = () => {
         <>
             <div className='bg-[url(src/assets/images/png/header-bg.png)] bg-cover bg-left-bottom bg-no-repeat '>
 
-                <nav className=' py-5'>
+                <nav className='py-5'>
                     <div className='max-w-[1140px] mx-auto px-3 flex items-center justify-between'>
                         <img src={logo} alt="logo" />
                         <div className='flex gap-5'>
@@ -27,7 +27,7 @@ const Header = () => {
                         <Button buttonText="Get Started" buttonClass='!py-2 !bg-white !px-4' />
                     </div>
                 </nav>
-                <div className='max-w-[1140px] mx-auto px-3 pt-[122px] pb-[100px] h-[810px]'>
+                <div className='max-w-[1140px] mx-auto px-3 pt-[122px] pb-[100px] h-[790px]'>
                     <div className='flex flex-wrap mx-[-12px]'>
 
                         <div className='w-1/2 px-[12px] '>
@@ -41,7 +41,7 @@ const Header = () => {
                             </div>
                         </div>
                         <div className='w-1/2  px-[12px] relative'>
-                            <img src={headerImage} alt="image" />
+                            <img src={headerImage} alt="image"  className='cursor-pointer '/>
                             <img src={dots} alt="image" className='absolute top-[-57px] right-[-51px]'/>
                         </div>
 
