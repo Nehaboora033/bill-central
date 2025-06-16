@@ -1,18 +1,22 @@
+import React from 'react'
 
 import './App.css'
-import Button from './components/common/Button'
-import Companies from './components/Companies'
 import Header from './components/Header'
 import SwitchingEnergy from './components/SwitchingEnergy'
-
+import SimpleSteps from './components/SimpleSteps'
+import Comparisons from './components/comparisons'
+import CompaniesLogo from './components/common/CompaniesLogo'
+import Utilities from './components/Utilities'
 function App() {
 
   return (
     <>
       <Header />
-      <Companies />
-      <SwitchingEnergy/>
-      
+      <CompaniesLogo/>
+      <SwitchingEnergy />
+      <SimpleSteps />
+      <Comparisons />
+      <Utilities/>
     </>
   )
 }

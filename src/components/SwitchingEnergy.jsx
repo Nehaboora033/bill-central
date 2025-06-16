@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from '../assets/images/png/switchingenergy-img.png'
+import Button from './common/Button'
 
 const SwitchingEnergy = () => {
     return (
@@ -7,7 +8,7 @@ const SwitchingEnergy = () => {
             <div className='max-w-[1140px] mx-auto px-3 py-[162px]'>
                 <div className='flex flex-wrap mx-[-12px]'>
                     <div className='w-1/2 px-3'>
-                        <img src={Image} alt="image" />
+                        <img src={Image} alt="image" className='cursor-pointer' />
                     </div>
                     <div className='w-1/2 px-3'>
                         <p className='text-[48px] font-normal max-w-[409px] w-full'><span className='font-semibold text-[#00171F]'>Switching Energy</span> Made Simple</p>
@@ -19,6 +20,7 @@ const SwitchingEnergy = () => {
                                 <li className='text-[#1A2E35] text-base font-normal ml-4'>Get better customer service.</li>
                                 <li className='text-[#1A2E35] text-base font-normal ml-4'>Explore greener, more sustainable energy options.</li>
                             </ul>
+                            <Button buttonText={"Compare With Us"} buttonClass='bg-[#00A8E8] text-white py-[15px] px-[20px] mt-[42px] hover:bg-[#0A486E] ' svgColor={'stroke-[white]'}/>
                         </div>
                     </div>
 
