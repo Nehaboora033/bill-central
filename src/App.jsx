@@ -16,7 +16,8 @@ function App() {
       <SwitchingEnergy />
       <SimpleSteps />
       <Comparisons />
-      <Utilities/>
+      <Utilities />
+      
     </>
   )
 }

@@ -12,6 +12,11 @@ import gasStation from '../assets/images/svg/gas-station.svg'
 import internet from '../assets/images/svg/internet-explorer.svg'
 import bundle from '../assets/images/svg/bundle.svg'
 
+import simplified from '../assets/images/svg/simplified.svg'
+import time from '../assets/images/svg/time.svg'
+import service from '../assets/images/svg/no-service.svg'
+import support from '../assets/images/svg/support.svg'
+
 export const COMPANIES_LOGO = [
     {
         image: energy, alt: "energy"
@@ -75,4 +80,27 @@ export const ACCORDIAN_DATA = [
             content: "Whether you want renewable energy, low rates, or flexible contracts, we'll help you find the best provider",
         }
     },
+]
+
+export const UTILITIES_CARD = [
+    {
+        icon:simplified,
+        title:"Simplified Comparison Process",
+        description:"Our intuitive platform lets you compare the best utility providers in one place, helping you make a quick and informed decision.",
+    },
+    {
+        icon:time,
+        title: "Save Time and Money",
+        description:"With up-to-date plans and pricing, you can be sure you’re getting the most competitive rates available.",
+    },
+    {
+        icon:service,
+        title: "No Service Interruptions",
+        description:"We take care of the entire switching process so you can enjoy a hassle-free experience with zero downtime.",
+    },
+    {
+        icon:support,
+        title: "Comprehensive Support",
+        description:"Whether you need assistance selecting a plan or during the switch, our dedicated support team is here to help every step of the way.",
+    }
 ]
