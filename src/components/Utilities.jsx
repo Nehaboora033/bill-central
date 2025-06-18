@@ -17,14 +17,14 @@ const Utilities = () => {
                     <div className='max-w-[424px] bg-[#003459] p-[40px]'>
                         <img src={Review} alt="review" />
                         <p className='font-normal text-2xl text-white'>Tailored Recommendations</p>
-                        <p className='font-normal text-2xl text-[#E5EBEE] mt-3'>Our platform analyzes your unique energy needs and preferences to suggest the best utility providers, ensuring you get the most personalized options available.</p>
+                        <p className='font-normal text-base text-[#E5EBEE] mt-3'>Our platform analyzes your unique energy needs and preferences to suggest the best utility providers, ensuring you get the most personalized options available.</p>
                         <button className='w-[64px] h-[52px] bg-white rounded-[446px] flex items-center justify-center mt-[22px] cursor-pointer'>
                             <img src={Pointer} alt="pointer" />
                         </button>
                     </div>
                     <div className='grid grid-cols-2 gap-[24px]'>
                         {UTILITIES_CARD.map((card, index) => (
-                            <div key={index} className='border border-[#E5E8E9] rounded p-6 max-w-[334px] shadow-lg'>
+                            <div key={index} className='border border-[#E5E8E9] rounded p-6 max-w-[334px] shadow-lg cursor-pointer'>
                                 <img src={card.icon} alt="image" />
                                     <p className='font-normal text-2xl  text-[#010101] mt-[18px]'>{card.title}</p>
                                     <p className='font-normal text-base text-[#1A2E35] mt-3'>{card.description}</p>
