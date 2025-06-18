@@ -19,7 +19,7 @@ function App() {
       <CompaniesLogo />
       <SwitchingEnergy />
       <SimpleSteps />
-      <Comparisons />
+      <Comparisons/>
       <Utilities />
       <Testimonials />
       <FAQ />

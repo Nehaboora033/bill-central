@@ -9,7 +9,7 @@ const SimpleSteps = () => {
             <div className='max-w-[1140px] px-3 mx-auto'>
                 <SubHeading subHeading='!text-center' normalText={"Simple Steps to"} boldText={"Switch"} descriptionText={"Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum"} description='!text-center max-w-[610px] mx-auto' />
             </div>
-            <div className='max-w-[1440px] mx-auto mt-[58px]'>
+            <div className='max-w-[1440px] mx-auto mt-[58px] cursor-pointer'>
                 <div className='flex mx-auto relative'>
                     {SWITCH_DATA.map((item, index) => (
                         <div key={index} className='overflow-hidden'>

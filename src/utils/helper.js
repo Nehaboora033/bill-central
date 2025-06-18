@@ -6,11 +6,6 @@ import origin from '../assets/images/png/origin.png'
 import sumo from '../assets/images/png/sumo.png'
 import ovo from '../assets/images/png/ovo.png'
 
-import lightbulb from '../assets/images/svg/lightbulb.svg'
-import gasStation from '../assets/images/svg/gas-station.svg'
-import internet from '../assets/images/svg/internet-explorer.svg'
-import bundle from '../assets/images/svg/bundle.svg'
-
 import simplified from '../assets/images/svg/simplified.svg'
 import time from '../assets/images/svg/time.svg'
 import service from '../assets/images/svg/no-service.svg'
@@ -24,6 +19,8 @@ import switchImage4 from '../assets/images/png/switch-img4.png'
 import profile1 from '../assets/images/svg/profile1.svg'
 import profile2 from '../assets/images/svg/profile2.svg'
 import profile3 from '../assets/images/svg/profile3.svg'
+
+import { LIGHT_BULB ,BUNDLE, GAS_STATION, INTERNET_EXPLORER } from './Icons'
 
 export const COMPANIES_LOGO = [
     {
@@ -58,37 +55,6 @@ export const NAV = [
     { name: 'FAQ' }
 ];
 
-export const ACCORDIAN_DATA = [
-    {
-        Accordian1: {
-            image: lightbulb, alt: "lightbulb",
-            header: "Electricity Plan Comparisons",
-            content: "Whether you want renewable energy, low rates, or flexible contracts, we'll help you find the best provider."
-        }
-    },
-    {
-        Accordian2: {
-            image: gasStation, alt: "gasstation",
-            header: "Gas Plan Comparisons",
-            content: "Whether you want renewable energy, low rates, or flexible contracts, we'll help you find the best provider.",
-        }
-    },
-    {
-        Accordian3: {
-            image: internet, alt: "internet",
-            header: "Internet Plan Comparisons",
-            content: "Whether you want renewable energy, low rates, or flexible contracts, we'll help you find the best provider"
-
-        }
-    },
-    {
-        Accordian4: {
-            image: bundle, alt: "bundle",
-            header: "Bundle Packages",
-            content: "Whether you want renewable energy, low rates, or flexible contracts, we'll help you find the best provider",
-        }
-    },
-]
 
 export const UTILITIES_CARD = [
     {
@@ -147,3 +113,28 @@ export const SWITCH_DATA = [
 
 ];
 
+export const COMPARISONS_ACCORDIAN = [
+
+    {
+        image: LIGHT_BULB,
+        question: "Electricity Plan Comparisons",
+        answer: "Whether you want renewable energy, low rates, or flexible contracts, we'll help you find the best provider.",
+    },
+    {
+        image: GAS_STATION,
+        question: "Gas Plan Comparisons",
+        answer: "Whether you want renewable energy, low rates, or flexible contracts, we'll help you find the best provider.",
+
+    },
+    {
+        image: INTERNET_EXPLORER,
+        question: "Internet Plan Comparisons",
+        answer: "Whether you want renewable energy, low rates, or flexible contracts, we'll help you find the best provider.",
+    },
+    {
+        image: BUNDLE,
+        question: "Bundle Packages",
+        answer: "Whether you want renewable energy, low rates, or flexible contracts, we'll help you find the best provider.",
+    },
+
+];
