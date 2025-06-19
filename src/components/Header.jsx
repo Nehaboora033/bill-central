@@ -1,30 +1,42 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '../assets/images/svg/logo.svg'
 import Button from './common/Button'
 import headerImage from '../assets/images/png/header-img.png'
 import dots from '../assets/images/svg/header-dotspattern.svg'
 
 import { NAV } from '../utils/helper'
-import MenuIcon from './MenuIcon'
+
 
 
 const Header = () => {
+    const [state, setIsOpen] = useState(null);
+    const [scrolled, setScrolled] = useState(false);
+
+    //scrolled effect 
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 10);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         //navbar
         <>
             <div className='bg-[url(src/assets/images/png/header-bg.png)] bg-cover lg:bg-size-[100%_810px] bg-top-center bg-no-repeat '>
 
-                <nav className='py-5  w-full '>
+                <nav className={`py-5  w-full fixed top-0  transition-all duration-200 ease-in-out z-20 ${scrolled ?'bg-[#0B496F] shadow-lg ': 'bg-transparent'}`}>
                     <div className='max-w-[1140px] mx-auto px-3 flex items-center justify-between'>
                         <img src={logo} alt="logo" className='cursor-pointer' />
                         <div>
-                            <ul className='flex items-center menulist max-lg:gap-[100px] max-lg:right-[-100%] gap-6 max-lg:flex-col lg:flex-row  max-lg:justify-center max-lg:h-full max-lg:w-[75%] max-lg:bg-[#0B496F] max-lg:fixed'>
+                            <ul className={`flex items-center menulist max-lg:gap-[100px] z-9  top-0 gap-6 max-lg:flex-col lg:flex-row transition-[right] duration-300 max-lg:justify-center max-lg:h-full max-lg:w-[75%] max-lg:bg-[#0B496F] max-lg:fixed ${state === "show" ? 'right-0' : 'max-lg:right-[-100%]'}`}>
                                 {NAV.map((items, i) => (
                                     <li key={i} >
                                         <a href="" className='capitalize text-[#E6ECF0] whitespace-nowrap cursor-pointer relative inline-block group' >
                                             {items.name}
                                             <span
-                                                class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#E6EDF0] transition-all duration-300 group-hover:w-full rounded"></span>
+                                                className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#E6EDF0] transition-all duration-300 group-hover:w-full rounded"></span>
                                         </a>
                                     </li>
                                 ))}
@@ -32,12 +44,18 @@ const Header = () => {
                         </div>
                         <div className='flex items-center gap-3'>
                             <Button buttonText="Get Started" buttonClass='py-2 bg-white px-4 ' />
-                            <MenuIcon />
+                            <button onClick={() => setIsOpen(state === "show" ? null : "show")}
+                                className='w-[45px] h-[35px]  z-10 flex flex-col justify-between lg:hidden'>
+                                <span className={`h-1 w-full bg-white rounded-[50px] transition-all duration-200 ${state === "show" ? 'rotate-[45deg] origin-left' : ''}`}></span>
+                                <span className={`h-1 w-full bg-white rounded-[50px] transition-all duration-200 ${state === "show" ? 'hidden' : ''}`}></span>
+                                <span className={`h-1 w-full bg-white rounded-[50px] transition-all duration-200 ${state === "show" ? 'rotate-[-45deg] origin-left' : ''}`}></span>
+                            </button>
+
                         </div>
 
                     </div>
                 </nav>
-                <div className='max-w-[1140px] mx-auto px-3 pt-[110px]'>
+                <div className='max-w-[1140px] mx-auto px-3 pt-[190px] '>
                     <div className='flex flex-wrap mx-[-12px]'>
                         <div className='w-1/2 px-[12px] flex flex-col justify-between'>
                             <div>
@@ -55,7 +73,7 @@ const Header = () => {
                             </div>
                         </div>
                         <div className='w-1/2  px-[12px] relative'>
-                            <img src={headerImage} alt="image" className='cursor-pointer relative z-10' />
+                            <img src={headerImage} alt="image" className='cursor-pointer relative z-1' />
                             <img src={dots} alt="image" className='absolute top-[-57px] right-0 xl:right-[-51px]' />
                         </div>
                     </div>

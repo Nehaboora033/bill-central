@@ -20,7 +20,7 @@ const Footer = () => {
                     <a
                       href={item.href}
                       key={index}
-                      className="group w-[33px] h-[33px] flex justify-center mt-4 mb-[56px] items-center border border-white rounded-full hover:border-[#00A8E8] transition-colors"
+                      className="group w-[33px] h-[33px] flex justify-center mt-4 mb-[56px] items-center border border-white rounded-full hover:border-[#b0afaf] transition-colors"
                       target="_blank"
                       rel="social links">{item.icon}
                     </a>
@@ -33,20 +33,20 @@ const Footer = () => {
                 <li className='text-white text-[20px] font-bold mb-3 '>Quick Link</li>
                 {FOOTER_LINKS.map((item, index) => (
                   <li key={index} className='mb-4'>
-                    <a href="" className='text-[#E6EBEF] text-base font-normal whitespace-nowrap capitalize hover:text-[#00A8E8] transition-colors'>{item.name}</a>
+                    <a href="" className='text-[#E6EBEF] text-base font-normal whitespace-nowrap capitalize hover:text-[#b0afaf] transition-colors'>{item.name}</a>
                   </li>
                 ))}
               </ul>
               <ul>
                 <li className='text-white text-[20px] font-bold mb-3 '>Services</li>
-                <li className='mb-4'><a href="" className='text-[#E6EBEF] text-base font-normal whitespace-nowrap capitalize  hover:text-[#00A8E8] transition-colors'>Privacy Policy</a></li>
-                <li><a href="" className='text-[#E6EBEF] text-base font-normal whitespace-nowrap capitalize hover:text-[#00A8E8] transition-colors'>Terms of Services</a></li>
+                <li className='mb-4'><a href="" className='text-[#E6EBEF] text-base font-normal whitespace-nowrap capitalize  hover:text-[#b0afaf] transition-colors'>Privacy Policy</a></li>
+                <li><a href="" className='text-[#E6EBEF] text-base font-normal whitespace-nowrap capitalize hover:text-[#b0afaf] transition-colors'>Terms of Services</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div className='py-5 border-t border-[#34607E] '>
-          <a href="" className='text-[14px] font-noraml text-[#E6EBEF] block text-center'>© 2024 BILL CENTRAL, Inc. All Rights Reserved.</a>
+          <a href="" className='text-[14px] font-noraml text-[#E6EBEF] block text-center hover:text-[#b0afaf]'>© 2024 BILL CENTRAL, Inc. All Rights Reserved.</a>
         </div>
       </div>
     </>
