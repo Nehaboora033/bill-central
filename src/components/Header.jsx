@@ -16,13 +16,15 @@ const Header = () => {
 
                 <nav className='py-5  w-full '>
                     <div className='max-w-[1140px] mx-auto px-3 flex items-center justify-between'>
-                        <img src={logo} alt="logo" />
+                        <img src={logo} alt="logo" className='cursor-pointer' />
                         <div>
-                            <ul className='flex items-center menulist max-lg:gap-[100px] max-lg:right-[-100%] gap-6 max-lg:flex-col lg:flex-row  max-lg:justify-center max-lg:h-full max-lg:w-[75%] max-lg:bg-[#0B496F] '>
+                            <ul className='flex items-center menulist max-lg:gap-[100px] max-lg:right-[-100%] gap-6 max-lg:flex-col lg:flex-row  max-lg:justify-center max-lg:h-full max-lg:w-[75%] max-lg:bg-[#0B496F] max-lg:fixed'>
                                 {NAV.map((items, i) => (
                                     <li key={i} >
-                                        <a href="" className='capitalize text-[#E6ECF0] whitespace-nowrap hover:text-[#00A8E8]' >
+                                        <a href="" className='capitalize text-[#E6ECF0] whitespace-nowrap cursor-pointer relative inline-block group' >
                                             {items.name}
+                                            <span
+                                                class="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#E6EDF0] transition-all duration-300 group-hover:w-full rounded"></span>
                                         </a>
                                     </li>
                                 ))}
@@ -54,12 +56,12 @@ const Header = () => {
                         </div>
                         <div className='w-1/2  px-[12px] relative'>
                             <img src={headerImage} alt="image" className='cursor-pointer relative z-10' />
-                            <img src={dots} alt="image" className='absolute top-[-57px] right-[-51px]' />
+                            <img src={dots} alt="image" className='absolute top-[-57px] right-0 xl:right-[-51px]' />
                         </div>
                     </div>
                 </div>
             </div>
-           
+
         </>
     )
 }

@@ -19,8 +19,8 @@ const Comparisons = () => {
                             return (
                                 <div key={index} className={`p-[14px] max-w-[558px] border border-[#00000014] rounded-sm mb-6 ${isOpen === index ? 'shadow-lg' : ''}`}>
                                     <div className='flex gap-6'>
-                                        <div className={`size-16 rounded-[50%] flex items-center justify-center transition-all duration-300 max-w-[64px] w-full ${isOpen === index ? 'bg-[#003459]' : 'bg-[#EAF9FF]'} `}>
-                                            <Svg className={` transition-all duration-300 ${isOpen === index ? 'text-white' : 'text-[#007EA7]'}`} />
+                                        <div className={`size-16 rounded-[50%] flex items-center cursor-pointer justify-center transition-all duration-300 max-w-[64px] w-full ${isOpen === index ? 'bg-[#003459]' : 'bg-[#EAF9FF]'} `}>
+                                            <Svg className={` transition-all duration-300 cursor-pointer ${isOpen === index ? 'text-white' : 'text-[#007EA7]'}`} />
                                         </div>
                                         <div className='relative overflow-hidden w-full transition-all duration-150'>
                                             <button onClick={() => setIsOpen(isOpen === index ? null : index)} className={`font-normal text-[24px]  text-[#00171F] w-full text-left cursor-pointer py-3 flex justify-between items-center ${isOpen === index ? '' : ' mb-2'}`}>
@@ -40,7 +40,7 @@ const Comparisons = () => {
                         })}
                     </div>
                     <div className='w-1/2 px-3 '>
-                        <img src={Image} alt="image" className='w-full block my-auto' />
+                        <img src={Image} alt="image" className='w-full block my-auto cursor-pointer' />
                     </div>
                 </div>
 
@@ -52,6 +52,3 @@ const Comparisons = () => {
 
 
 export default Comparisons
-
-
-// className = {`${isOpen === index ? 'rotate-180' : 'rotate-0'} cursor-pointer transition-transform duration-200`}

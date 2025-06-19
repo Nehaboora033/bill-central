@@ -15,12 +15,10 @@ const PreviousArrow = ({ onClick }) => (
 const NextArrow = ({ onClick }) => (
     <button
         onClick={onClick}
-        className="w-[40px] h-[40px] rounded-full cursor-pointer border border-[#00171F] flex items-center justify-center max-[640px]:hidden active:bg-black absolute top-1/2 right-[-55px] -translate-y-1/2 z-30 text-[#00171F] group">
+        className="w-[40px] h-[40px] rounded-full cursor-pointer border border-[#00171F] flex items-center justify-center max-[640px]:hidden active:bg-black absolute top-1/2 right-[-55px] -translate-y-1/2  text-[#00171F] group">
         <NEXT_ARROW />
     </button>
 );
-
-
 
 const Testimonials = () => {
     const settings = {
@@ -33,7 +31,7 @@ const Testimonials = () => {
         autoplay: false,
         autoplaySpeed: 0,
         prevArrow: <PreviousArrow />,
-        NextArrow: <NextArrow />,
+        nextArrow: <NextArrow />,
 
         responsive: [
             {
@@ -90,30 +88,3 @@ const Testimonials = () => {
 }
 
 export default Testimonials
-
-// return (
-//     <div className="testimonial max-w-[1140px] px-3 mx-auto mb-[162px] ">
-//         <Slider {...settings}>
-//             {testimonial.map((content, index) => (
-//                 <div key={index} className='p-5 border border-[#E6E6E6] rounded-sm flex flex-col shadow-md max-w-[364px] '>
-//                     <div className='flex gap-2 items-center mb-6'>
-//                         <img src={content.profile} alt="profile" className='size-[60px]' />
-//                         <div>
-//                             <p className='font-normal text-2xl leading-[1.5] text-black'>
-//                                 {content.name}
-//                             </p>
-//                             <p className='font-normal text-base leading-[1.5] text-[#808080]'>
-//                                 {content.handle}
-//                             </p>
-//                         </div>
-//                     </div>
-//                     <img src={content.rating} alt="img" className='max-w-[99.2px] ' />
-//                     <p className='font-normal text-base leading-[1.5] text-[#1A2F36] mt-[18px] max-w-[324px]'>
-//                         {content.description}
-//                     </p>
-//                 </div>
-//             ))
-//             }
-//         </Slider>
-//     </div>
-// )

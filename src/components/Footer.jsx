@@ -45,6 +45,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div className='py-5 border-t border-[#34607E] '>
+          <a href="" className='text-[14px] font-noraml text-[#E6EBEF] block text-center'>© 2024 BILL CENTRAL, Inc. All Rights Reserved.</a>
+        </div>
       </div>
     </>
 
