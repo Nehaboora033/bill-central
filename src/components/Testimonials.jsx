@@ -2,19 +2,20 @@ import React from 'react'
 import SubHeading from './common/SubHeading'
 import { TESTIMONIALS_SLIDER } from '../utils/helper'
 import Slider from 'react-slick'
-import { NEXT_ARROW, PREVIOUS_ARROW } from '../utils/Icons'
+import { PREVIOUS_ARROW } from '../utils/Icons'
+import { NEXT_ARROW } from '../utils/Icons'
 
 const PreviousArrow = ({ onClick }) => (
     <button onClick={onClick}
-        className='w-[40px] h-[40px] rounded-full cursor-pointer border border-[#00171F] flex items-center justify-center  active:bg-black absolute top-1/2 left-[-60px] -translate-1/2 max-[640px]:hidden group'>
+        className='w-[40px] h-[40px] rounded-full cursor-pointer border border-[#00171F] flex items-center justify-center  active:bg-black absolute top-1/2 left-[-60px] -translate-y-1/2 max-[640px]:hidden group'>
         <PREVIOUS_ARROW />
     </button>
 );
 
-
 const NextArrow = ({ onClick }) => (
-    <button onClick={onClick}
-        className='w-[40px] h-[40px] rounded-full cursor-pointer border border-[#00171F] flex items-center justify-center '>
+    <button
+        onClick={onClick}
+        className="w-[40px] h-[40px] rounded-full cursor-pointer border border-[#00171F] flex items-center justify-center max-[640px]:hidden active:bg-black absolute top-1/2 right-[-55px] -translate-y-1/2 z-30 text-[#00171F] group">
         <NEXT_ARROW />
     </button>
 );
@@ -29,10 +30,11 @@ const Testimonials = () => {
         sliddesToScroll: 1,
         arrows: true,
         infinite: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 0,
         prevArrow: <PreviousArrow />,
         NextArrow: <NextArrow />,
+
         responsive: [
             {
                 breakpoint: 1024,

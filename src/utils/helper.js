@@ -22,7 +22,7 @@ import profile3 from '../assets/images/svg/profile3.svg'
 
 import star from '../assets/images/svg/stars.svg'
 
-import { LIGHT_BULB ,BUNDLE, GAS_STATION, INTERNET_EXPLORER } from './Icons'
+import { LIGHT_BULB, BUNDLE, GAS_STATION, INTERNET_EXPLORER } from './Icons'
 
 export const COMPANIES_LOGO = [
     {
@@ -143,11 +143,11 @@ export const COMPARISONS_ACCORDIAN = [
 
 export const TESTIMONIALS_SLIDER = [
     {
-        image:profile1,
-        name:"Cameron",
-        handle:"@cameron",
-        rating:star,
-        content:"Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.",
+        image: profile1,
+        name: "Cameron",
+        handle: "@cameron",
+        rating: star,
+        content: "Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.",
     },
     {
         image: profile2,
@@ -163,4 +163,26 @@ export const TESTIMONIALS_SLIDER = [
         rating: star,
         content: "Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.",
     },
+];
+
+
+export const FAQ_DATA = [
+    {
+        question: "Can I switch providers if I'm currently in a contract?",
+        answer: "Yes, but some contracts may include exit fees. We can guide you through the terms of your current plan and help you determine if switching now makes sense for you.",
+    },
+    {
+        question: "Will my service be interrupted if I switch providers?",
+        answer: "Yes, but some contracts may include exit fees. We can guide you through the terms of your current plan and help you determine if switching now makes sense for you.",
+
+    },
+    {
+        question: "How long does it take to switch providers?",
+        answer: "Yes, but some contracts may include exit fees. We can guide you through the terms of your current plan and help you determine if switching now makes sense for you.",
+    },
+    {
+        question: "Is there a fee for switching providers?",
+        answer: "Yes, but some contracts may include exit fees. We can guide you through the terms of your current plan and help you determine if switching now makes sense for you.",
+    },
+
 ];
