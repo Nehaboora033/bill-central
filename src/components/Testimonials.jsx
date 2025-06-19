@@ -1,14 +1,117 @@
 import React from 'react'
 import SubHeading from './common/SubHeading'
+import { TESTIMONIALS_SLIDER } from '../utils/helper'
+import Slider from 'react-slick'
+import { NEXT_ARROW, PREVIOUS_ARROW } from '../utils/Icons'
+
+const PreviousArrow = ({ onClick }) => (
+    <button onClick={onClick}
+        className='w-[40px] h-[40px] rounded-full cursor-pointer border border-[#00171F] flex items-center justify-center  active:bg-black absolute top-1/2 left-[-60px] -translate-1/2 max-[640px]:hidden group'>
+        <PREVIOUS_ARROW />
+    </button>
+);
+
+
+const NextArrow = ({ onClick }) => (
+    <button onClick={onClick}
+        className='w-[40px] h-[40px] rounded-full cursor-pointer border border-[#00171F] flex items-center justify-center '>
+        <NEXT_ARROW />
+    </button>
+);
+
+
 
 const Testimonials = () => {
+    const settings = {
+        dots: false,
+        speed: 1500,
+        slidesToShow: 3,
+        sliddesToScroll: 1,
+        arrows: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 0,
+        prevArrow: <PreviousArrow />,
+        NextArrow: <NextArrow />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+
+
+    };
     return (
         <>
             <div className='max-w-[1140px] px-3 mx-auto py-[162px]'>
-                <SubHeading normalText={"Our"} boldText={"Testimonials"} subHeading='text-center' descriptionText={"Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum"} description='mx-auto text-center max-w-[490px]' />
+                <SubHeading normalText={"Our"} boldText={"Testimonials"} subHeading='text-center' descriptionText={"Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum"} description='mx-auto text-center max-w-[490px] mb-[62px]' />
+                <div className='max-w-[1140px] mx-auto px-3 '>
+                    <Slider {...settings}>
+                        {TESTIMONIALS_SLIDER.map((item, index) => (
+                            <div key={index} className='px-4'>
+                                <div className='p-5 border px-4 border-[#E5E5E5] rounded cursor-pointer shadow-md max-w-[364px] w-full'>
+
+                                    <div className='flex gap-[8px]'>
+                                        <img src={item.image} alt="image" className='cursor-pointer' />
+                                        <div>
+                                            <p className='text-2xl font-nornal '>{item.name}</p>
+                                            <p className='text-[#808080] text-base font-noraml mt-[2px]'>{item.handle}</p>
+
+                                        </div>
+                                    </div>
+                                    <img src={item.rating} alt="rating" className='mt-6 cursor-pointer' />
+                                    <p className='text-base text-noraml text-[#1A2E35] mt-[18px]'>Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.</p>
+                                </div>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
             </div>
+
         </>
     )
 }
 
 export default Testimonials
+
+// return (
+//     <div className="testimonial max-w-[1140px] px-3 mx-auto mb-[162px] ">
+//         <Slider {...settings}>
+//             {testimonial.map((content, index) => (
+//                 <div key={index} className='p-5 border border-[#E6E6E6] rounded-sm flex flex-col shadow-md max-w-[364px] '>
+//                     <div className='flex gap-2 items-center mb-6'>
+//                         <img src={content.profile} alt="profile" className='size-[60px]' />
+//                         <div>
+//                             <p className='font-normal text-2xl leading-[1.5] text-black'>
+//                                 {content.name}
+//                             </p>
+//                             <p className='font-normal text-base leading-[1.5] text-[#808080]'>
+//                                 {content.handle}
+//                             </p>
+//                         </div>
+//                     </div>
+//                     <img src={content.rating} alt="img" className='max-w-[99.2px] ' />
+//                     <p className='font-normal text-base leading-[1.5] text-[#1A2F36] mt-[18px] max-w-[324px]'>
+//                         {content.description}
+//                     </p>
+//                 </div>
+//             ))
+//             }
+//         </Slider>
+//     </div>
+// )

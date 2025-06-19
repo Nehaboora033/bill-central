@@ -20,6 +20,8 @@ import profile1 from '../assets/images/svg/profile1.svg'
 import profile2 from '../assets/images/svg/profile2.svg'
 import profile3 from '../assets/images/svg/profile3.svg'
 
+import star from '../assets/images/svg/stars.svg'
+
 import { LIGHT_BULB ,BUNDLE, GAS_STATION, INTERNET_EXPLORER } from './Icons'
 
 export const COMPANIES_LOGO = [
@@ -137,4 +139,28 @@ export const COMPARISONS_ACCORDIAN = [
         answer: "Whether you want renewable energy, low rates, or flexible contracts, we'll help you find the best provider.",
     },
 
+];
+
+export const TESTIMONIALS_SLIDER = [
+    {
+        image:profile1,
+        name:"Cameron",
+        handle:"@cameron",
+        rating:star,
+        content:"Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.",
+    },
+    {
+        image: profile2,
+        name: "Ronald",
+        handle: "@ronald",
+        rating: star,
+        content: "Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.",
+    },
+    {
+        image: profile3,
+        name: "Jay Shah",
+        handle: "@jayshah",
+        rating: star,
+        content: "Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.",
+    },
 ];
