@@ -9,7 +9,7 @@ const Footer = () => {
     <>
       <div className='bg-[url(src/assets/images/png/bg-Footer.png)] bg-center bg-cover bg-no-repeat'>
         <div className='max-w-[1140px] mx-auto px-3'>
-          <div className='flex justify-between pt-[68px]'>
+          <div className='flex justify-between pt-[68px] sm:flex-row flex-col '>
             <div>
               <img src={footerLogo} alt="logo" className='cursor-pointer hover:scale-105' />
               <p className='max-w-[297px] text-[#E6EBEF] font-normal text-base mt-[28px]'>Ut auctor nisi mauris eu tincidunt facilisi. Diam amet sollicitudin pretium maecenas ornare lacus arcu adipiscing. </p>
