@@ -15,12 +15,12 @@ const FAQ = () => {
 
                     {FAQ_DATA.map((item, index) => {
                         return (
-                            <div key={index} className={`px-6 py-[26px] rounded shadow-lg mb-6 transition-colors duration-200 ease-in-out cursor-pointer ${isOpen === index ? "bg-[#003459]" : "bg-white"}`}>
-                                <button onClick={() => setIsOpen(isOpen === index ? null : index)} className={`font-noraml text-2xl cursor-pointer  w-full flex justify-between  items-center  ${isOpen===index?"text-white":""} `}>
+                            <div key={index} className={`sm:px-6 p-4 py-[26px] rounded shadow-lg mb-6 transition-colors duration-200 ease-in-out cursor-pointer ${isOpen === index ? "bg-[#003459]" : "bg-white"}`}>
+                                <button onClick={() => setIsOpen(isOpen === index ? null : index)} className={`font-noraml sm:text-2xl text-lg cursor-pointer text-start w-full flex justify-between gap-3 ${isOpen===index?"text-white":""} `}>
                                     {item.question}
-                                    <span className={`w-[28px] h-[28px] rounded-full border-2 border-[#00171F] flex items-center justify-center ${isOpen===index?"border-white":""}`}>{isOpen === index ? <SUBTRACT_ICON /> : <ADD_ICON />}</span>
+                                    <span className={`max-w-[28px] w-full h-[28px] rounded-full border-2 border-[#00171F] flex items-center justify-center ${isOpen===index?"border-white":""}`}>{isOpen === index ? <SUBTRACT_ICON /> : <ADD_ICON />}</span>
                                 </button>
-                                <p className={`font-noraml text-base  transition-all duration-200 ease-in-out pt-[14px] max-w-[722px] overflow-hidden ${isOpen === index ? "text-white" : ""} ${isOpen===index?"max-h-[150px]":"max-h-0"}`}>{item.answer}</p>
+                                <p className={`font-noraml text-base  transition-all duration-200 ease-in-out pt-[14px] max-w-[722px] overflow-hidden ${isOpen === index ? "text-white" : ""} ${isOpen===index?"max-h-[250px]":"max-h-0"}`}>{item.answer}</p>
                             </div>
                         )
                     })}

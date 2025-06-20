@@ -11,10 +11,24 @@ const CompaniesLogo = () => {
         autoplay: true,
         autoplaySpeed: 0,
         cssEase: "linear",
-        arrows:false,
+        arrows: false,
         slidesToShow: 7,
         slidesToScroll: 1,
-      };
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 6,
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+        ]
+    };
 
     return (
         <div className=' max-w-[1140px] mx-auto px-3 pt-[64px] cursor-pointer'>

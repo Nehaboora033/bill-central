@@ -7,7 +7,7 @@ import { NEXT_ARROW } from '../utils/Icons'
 
 const PreviousArrow = ({ onClick }) => (
     <button onClick={onClick}
-        className='w-[40px] h-[40px] rounded-full cursor-pointer border border-[#00171F] flex items-center justify-center  active:bg-black absolute top-1/2 left-[-60px] -translate-y-1/2 max-[640px]:hidden group'>
+        className='w-[40px] h-[40px] rounded-full cursor-pointer border border-[#00171F] flex items-center justify-center  active:bg-black absolute xl:top-1/2 md:top-[115%] xl:left-[-60px]  -translate-y-1/2 max-md:hidden group'>
         <PREVIOUS_ARROW />
     </button>
 );
@@ -15,7 +15,7 @@ const PreviousArrow = ({ onClick }) => (
 const NextArrow = ({ onClick }) => (
     <button
         onClick={onClick}
-        className="w-[40px] h-[40px] rounded-full cursor-pointer border border-[#00171F] flex items-center justify-center max-[640px]:hidden active:bg-black absolute top-1/2 right-[-55px] -translate-y-1/2  text-[#00171F] group">
+        className="w-[40px] h-[40px] rounded-full cursor-pointer border border-[#00171F] flex items-center justify-center max-md:hidden active:bg-black absolute xl:top-1/2 xl:right-[-55px] md:right-[0px] md:top-[115%] -translate-y-1/2  text-[#00171F] group">
         <NEXT_ARROW />
     </button>
 );

@@ -1,4 +1,4 @@
-import energy from '../assets/images/png/1st-energy.png'
+import energy from '../assets/images/png/energy.png'
 import agl from '../assets/images/png/agl.png'
 import blue from '../assets/images/png/blue.png'
 import dodo from '../assets/images/png/dodo.png'
@@ -11,14 +11,14 @@ import time from '../assets/images/svg/time.svg'
 import service from '../assets/images/svg/no-service.svg'
 import support from '../assets/images/svg/support.svg'
 
-import switchImage1 from '../assets/images/png/switch-img1.png'
-import switchImage2 from '../assets/images/png/switch-img2.png'
-import switchImage3 from '../assets/images/png/switch-img3.png'
-import switchImage4 from '../assets/images/png/switch-img4.png'
+import switchImage1 from '../assets/images/png/switch-imgfirst.png'
+import switchImage2 from '../assets/images/png/switch-imgsecond.png'
+import switchImage3 from '../assets/images/png/switch-imgthird.png'
+import switchImage4 from '../assets/images/png/switch-imgfourth.png'
 
-import profile1 from '../assets/images/svg/profile1.svg'
-import profile2 from '../assets/images/svg/profile2.svg'
-import profile3 from '../assets/images/svg/profile3.svg'
+import profile1 from '../assets/images/svg/profilefirst.svg'
+import profile2 from '../assets/images/svg/profilesecond.svg'
+import profile3 from '../assets/images/svg/profilethird.svg'
 
 import star from '../assets/images/svg/stars.svg'
 
