@@ -15,7 +15,7 @@ const FAQ = () => {
 
                     {FAQ_DATA.map((item, index) => {
                         return (
-                            <div key={index} className={`sm:px-6 p-4 py-[26px] rounded shadow-lg mb-6 transition-colors duration-200 ease-in-out cursor-pointer ${isOpen === index ? "bg-[#003459]" : "bg-white"}`}>
+                            <div key={index} className={`sm:px-6 p-4 py-[26px] rounded shadow-lg mb-6 transition-colors duration-200 ease-in-out  ${isOpen === index ? "bg-[#003459]" : "bg-white"}`}>
                                 <button onClick={() => setIsOpen(isOpen === index ? null : index)} className={`font-noraml sm:text-2xl text-lg cursor-pointer text-start w-full flex justify-between gap-3 ${isOpen===index?"text-white":""} `}>
                                     {item.question}
                                     <span className={`max-w-[28px] w-full h-[28px] rounded-full border-2 border-[#00171F] flex items-center justify-center ${isOpen===index?"border-white":""}`}>{isOpen === index ? <SUBTRACT_ICON /> : <ADD_ICON />}</span>

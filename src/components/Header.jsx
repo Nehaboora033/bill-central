@@ -46,9 +46,9 @@ const Header = () => {
                             <Button buttonText="Get Started" buttonClass='py-2 bg-white px-4 ' />
                             <button onClick={() => setIsOpen(state === "show" ? null : "show")}
                                 className='w-[40px] h-[32px]  z-10 flex flex-col justify-between lg:hidden'>
-                                <span className={`h-1 w-full bg-white rounded-[50px] transition-all duration-200 ${state === "show" ? 'rotate-[45deg] origin-left' : ''}`}></span>
-                                <span className={`h-1 w-full bg-white rounded-[50px] transition-all duration-200 ${state === "show" ? 'hidden' : ''}`}></span>
-                                <span className={`h-1 w-full bg-white rounded-[50px] transition-all duration-200 ${state === "show" ? 'rotate-[-45deg] origin-left' : ''}`}></span>
+                                <span className={`h-1 w-full bg-[] rounded-[50px] transition-all duration-200 ${state === "show" ? 'rotate-[45deg] origin-left' : ''}`}></span>
+                                <span className={`h-1 w-full bg-[] rounded-[50px] transition-all duration-200 ${state === "show" ? 'hidden' : ''}`}></span>
+                                <span className={`h-1 w-full bg-[] rounded-[50px] transition-all duration-200 ${state === "show" ? 'rotate-[-45deg] origin-left' : ''}`}></span>
                             </button>
 
                         </div>
@@ -73,7 +73,7 @@ const Header = () => {
                             </div>
                         </div>
                         <div className='xl:w-1/2  px-[12px] relative'>
-                            <img src={headerImage} alt="image" className='cursor-pointer relative z-1 block mx-auto ' />
+                            <img src={headerImage} alt="image" className=' relative z-1 block mx-auto ' />
                             <img src={dots} alt="image" className='absolute top-[-57px] max-md:right-0 max-lg:right-[13%] lg:right-[13%] min-[1140px]:right-[-15%] xl:right-[-15%]' />
                         </div>
                     </div>

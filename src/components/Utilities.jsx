@@ -26,7 +26,7 @@ const Utilities = () => {
                     </div>
                     <div className='grid sm:grid-cols-2 grid-col-1 gap-[24px]'>
                         {UTILITIES_CARD.map((card, index) => (
-                            <div key={index} className='border border-[#E5E8E9] rounded p-6 lg:max-w-[334px] shadow-lg cursor-pointer'>
+                            <div key={index} className='border border-[#E5E8E9] rounded p-6 lg:max-w-[334px] shadow-lg'>
                                 <img src={card.icon} alt="image" />
                                 <p className='font-normal text-2xl  text-[#010101] mt-[18px]'>{card.title}</p>
                                 <p className='font-normal text-base text-[#1A2E35] mt-3'>{card.description}</p>

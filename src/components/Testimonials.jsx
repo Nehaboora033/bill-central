@@ -23,7 +23,7 @@ const NextArrow = ({ onClick }) => (
 const Testimonials = () => {
     const settings = {
         dots: false,
-        speed: 1500,
+        speed: 400,
         slidesToShow: 3,
         sliddesToScroll: 1,
         arrows: true,
@@ -64,17 +64,17 @@ const Testimonials = () => {
                     <Slider {...settings}>
                         {TESTIMONIALS_SLIDER.map((item, index) => (
                             <div key={index} className='px-4'>
-                                <div className='p-5 border px-4 border-[#E5E5E5] rounded cursor-pointer shadow-md max-w-[364px] w-full'>
+                                <div className='p-5 border px-4 border-[#E5E5E5] rounded shadow-md max-w-[364px] w-full'>
 
                                     <div className='flex gap-[8px]'>
-                                        <img src={item.image} alt="image" className='cursor-pointer' />
+                                        <img src={item.image} alt="image" />
                                         <div>
                                             <p className='text-2xl font-nornal '>{item.name}</p>
                                             <p className='text-[#808080] text-base font-noraml mt-[2px]'>{item.handle}</p>
 
                                         </div>
                                     </div>
-                                    <img src={item.rating} alt="rating" className='mt-6 cursor-pointer' />
+                                    <img src={item.rating} alt="rating" className='mt-6 ' />
                                     <p className='text-base text-noraml text-[#1A2E35] mt-[18px]'>Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.</p>
                                 </div>
                             </div>

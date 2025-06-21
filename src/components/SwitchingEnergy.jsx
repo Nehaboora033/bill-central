@@ -8,7 +8,7 @@ const SwitchingEnergy = () => {
             <div className='max-w-[1140px] mx-auto px-3 py-[162px]'>
                 <div className='flex flex-wrap mx-[-12px]'>
                     <div className='lg:w-1/2 px-3 w-full'>
-                        <img src={Image} alt="image" className='cursor-pointer block mx-auto lg:mx-0 ' />
+                        <img src={Image} alt="image" className=' block mx-auto lg:mx-0 ' />
                     </div>
                     <div className='lg:w-1/2 px-3 w-full'>
                         <p className='md:text-[48px] text-[40px] font-normal lg:max-w-[409px] w-full'><span className='font-semibold text-[#00171F]'>Switching Energy</span> Made Simple</p>
