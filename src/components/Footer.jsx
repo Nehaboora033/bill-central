@@ -2,12 +2,12 @@ import React from 'react'
 import footerLogo from '../assets/images/svg/footer-logo.svg'
 import { SOCIAL_LINKS } from '../utils/Icons';
 import { FOOTER_LINKS } from '../utils/helper';
-
+import footerBackground from '../assets/images/png/bg-Footer.png'
 
 const Footer = () => {
   return (
     <>
-      <div className='bg-[url(src/assets/images/png/bg-Footer.png)] bg-center bg-cover bg-no-repeat'>
+      <div className='bg-[url(src/assets/images/png/bg-Footer.png)] bg-center bg-cover bg-no-repeat' style={{backgroundImage:`url(${footerBackground})`}}>
         <div className='max-w-[1140px] mx-auto px-3'>
           <div className='flex justify-between pt-[68px] sm:flex-row flex-col '>
             <div>

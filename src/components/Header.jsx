@@ -3,7 +3,7 @@ import logo from '../assets/images/svg/logo.svg'
 import Button from './common/Button'
 import headerImage from '../assets/images/png/header-img.png'
 import dots from '../assets/images/svg/header-dotspattern.svg'
-
+import backgroundImage from '../assets/images/png/header-bg.png'
 import { NAV } from '../utils/helper'
 
 
@@ -24,9 +24,9 @@ const Header = () => {
     return (
         //navbar
         <>
-            <div className='bg-[url(src/assets/images/png/header-bg.png)] bg-cover xl:bg-size-[100%_810px] bg-top bg-no-repeat '>
+            <div className='bg-cover xl:bg-size-[100%_810px] bg-top bg-no-repeat' style={{backgroundImage:`url(${backgroundImage})`}} >
 
-                <nav className={`py-5  w-full fixed top-0  transition-all duration-200 ease-in-out z-20 ${scrolled ?'bg-[#0B496F] shadow-lg ': 'bg-transparent'}`}>
+                <nav className={`py-5  w-full fixed top-0  transition-all duration-200 ease-in-out z-20 ${scrolled ? 'bg-[#0B496F] shadow-lg ' : 'bg-transparent'}`}>
                     <div className='max-w-[1140px] mx-auto px-3 flex items-center justify-between'>
                         <img src={logo} alt="logo" className='cursor-pointer' />
                         <div>
