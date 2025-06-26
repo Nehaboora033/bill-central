@@ -11,9 +11,9 @@ const Comparisons = () => {
     return (
         <>
             <div className='max-w-[1140px] mx-auto px-3 py-[162px] '>
-                <div className='flex flex-wrap mx-[-12px] lg:flex-row flex-col-reverse gap-6 lg:gap-0'>
+                <div className='flex flex-wrap mx-[-12px] lg:flex-row flex-col-reverse gap-11 lg:gap-0'>
                     <div className='lg:w-1/2 w-full px-3'>
-                        <SubHeading normalText={"Comprehensive Utility"} boldText={"Comparisons"} subHeading='mb-[46px] text-center lg:text-start lg:max-w-[456px] w-full' />
+                        <SubHeading normalText={"Comprehensive Utility"} boldText={"Comparisons"} subHeading='lg:mb-[46px] mb-[35px] text-center lg:text-start lg:max-w-[456px] w-full' />
                         {COMPARISONS_ACCORDIAN.map((item, index) => {
                             return (
                                 <div key={index} className={`p-[14px] max-w-[558px] mx-auto lg:mx-0 border border-[#00000014] rounded-sm mb-6 ${isOpen === index ? 'shadow-lg' : ''}`}>

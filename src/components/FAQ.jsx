@@ -20,7 +20,7 @@ const FAQ = () => {
                                     {item.question}
                                     <span className={`max-w-[28px] w-full h-[28px] rounded-full border-2 border-[#00171F] flex items-center justify-center ${isOpen===index?"border-white":""}`}>{isOpen === index ? <SUBTRACT_ICON /> : <ADD_ICON />}</span>
                                 </button>
-                                <p className={`font-noraml text-base  transition-all duration-200 ease-in-out pt-[14px] max-w-[722px] overflow-hidden ${isOpen === index ? "text-white" : ""} ${isOpen===index?"max-h-[250px]":"max-h-0"}`}>{item.answer}</p>
+                                <p className={`font-noraml text-base  transition-all duration-200 ease-in-out  max-w-[722px] overflow-hidden ${isOpen === index ? "text-white" : ""} ${isOpen===index?"max-h-[250px] pt-[14px]":"max-h-0"}`}>{item.answer}</p>
                             </div>
                         )
                     })}

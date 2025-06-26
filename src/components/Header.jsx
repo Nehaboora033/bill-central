@@ -25,7 +25,7 @@ const Header = () => {
     return (
         //navbar
         <>
-            <div className='bg-cover xl:bg-size-[100%_810px] bg-top bg-no-repeat' style={{ backgroundImage: `url(${backgroundImage})` }} >
+            <div className='bg-cover min-[1130px]:bg-size-[100%_810px] bg-top bg-no-repeat' style={{ backgroundImage: `url(${backgroundImage})` }} >
 
                 <nav className={`py-5  w-full fixed top-0  transition-all duration-200 ease-in-out z-20 ${scrolled ? 'bg-[#0B496F] shadow-lg ' : 'bg-transparent'}`}>
                     <div className='max-w-[1140px] mx-auto px-3 flex items-center justify-between'>
@@ -47,9 +47,9 @@ const Header = () => {
                             <Button buttonText="Get Started" buttonClass='py-2 bg-white px-4 ' />
                             <button onClick={() => setIsOpen(state === "show" ? null : "show")}
                                 className='w-[40px] h-[32px]  z-10 flex flex-col justify-between lg:hidden'>
-                                <span className={`h-1 w-full bg-[] rounded-[50px] transition-all duration-200 ${state === "show" ? 'rotate-[45deg] origin-left' : ''}`}></span>
-                                <span className={`h-1 w-full bg-[] rounded-[50px] transition-all duration-200 ${state === "show" ? 'hidden' : ''}`}></span>
-                                <span className={`h-1 w-full bg-[] rounded-[50px] transition-all duration-200 ${state === "show" ? 'rotate-[-45deg] origin-left' : ''}`}></span>
+                                <span className={`h-1 w-full bg-white rounded-[50px] transition-all duration-200 ${state === "show" ? 'rotate-[45deg] origin-left' : ''}`}></span>
+                                <span className={`h-1 w-full bg-white rounded-[50px] transition-all duration-200 ${state === "show" ? 'hidden' : ''}`}></span>
+                                <span className={`h-1 w-full bg-white rounded-[50px] transition-all duration-200 ${state === "show" ? 'rotate-[-45deg] origin-left' : ''}`}></span>
                             </button>
 
                         </div>
@@ -57,22 +57,22 @@ const Header = () => {
                     </div>
                 </nav>
                 <div className='max-w-[1140px] mx-auto px-3 pt-[190px] '>
-                    <div className='flex flex-wrap mx-[-12px] xl:flex-row flex-col-reverse'>
-                        <div className='xl:w-1/2 px-[12px] flex flex-col justify-between'>
+                    <div className='flex flex-wrap mx-[-12px] min-[950px]:flex-row  flex-col-reverse min-[950px]:gap-0 gap-6 '>
+                        <div className='min-[950px]:w-1/2 w-full px-[12px] flex flex-col justify-between'>
                             <div>
-                                <p className='font-normal md:text-[64px] text-[56px] text-white xl:max-w-[550px] max-w[50%] w-full'>
+                                <p className='font-normal md:text-[58px] text-center min-[950px]:text-start xl:text-[64px] text-[50px] text-white min-[950px]:max-w-[550px]  w-full'>
                                     Easily Compare<span className='font-bold'> Energy, Gas, And Internet</span> Plans</p>
-                                <p className='text-[#E6EDF1] font-normal text-base mt-[16px] mb-[42px]'>Find and switch to the best energy, gas, and internet plans with ease. Our platform simplifies your search, letting you compare providers and make informed decisions, all in one place.</p>
+                                <p className='text-[#E6EDF1] min-[950px]:text-start text-center font-normal text-base mt-[16px] mb-[42px]'>Find and switch to the best energy, gas, and internet plans with ease. Our platform simplifies your search, letting you compare providers and make informed decisions, all in one place.</p>
 
-                                <Input placeholderText={"Start typing your address"} buttonText={"Compare"} buttonClass="bg-[#00A8E8] text-white py-[15px] px-5" svgColor={'stroke-[white]'} />
+                                <Input placeholderText={"Start typing your address"} buttonText={"Compare"} buttonClass="bg-[#00A8E8] text-white py-[15px] px-5" svgColor={'stroke-[white]'} Inputclass={"mx-auto"} />
                             </div>
                             <div>
-                                <p className='md:text-[38px] text-[34px] xl:text-[#003459] text-white font-normal xl:max-w-[548px]'>More than <span className='text-[48px] font-bold text-[#00A8E8]'>80,000</span>+ companies trust bill central </p>
+                                <p className='md:text-[38px] w-full min-[950px]:text-start text-center text-[34px] min-[1130px]:text-[#003459] text-white min-[950px]:pt-0 pt-6 font-normal min-[950]:max-w-[548px] min-[950px]:mb-0 mb-6'>More than <span className='text-[48px] font-bold text-[#00A8E8]'>80,000</span>+ companies trust bill central </p>
                             </div>
                         </div>
-                        <div className='xl:w-1/2  px-[12px] relative'>
+                        <div className='min-[950px]:w-1/2 w-full  px-[12px] relative'>
                             <img src={headerImage} alt="image" className=' relative z-1 block mx-auto ' />
-                            <img src={dots} alt="image" className='absolute top-[-57px] right-0 min-md:right-[9%] min-lg:right-[17%] xl:right-[-11%] ' />
+                            <img src={dots} alt="image" className='absolute top-[-57px] right-0 min-[800px]:right-[12%] lg:right-0¸  xl:right-[-11%]' />
                         </div>
                     </div>
                 </div>
