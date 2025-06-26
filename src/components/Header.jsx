@@ -5,6 +5,7 @@ import headerImage from '../assets/images/png/header-img.png'
 import dots from '../assets/images/svg/header-dotspattern.svg'
 import backgroundImage from '../assets/images/png/header-bg.png'
 import { NAV } from '../utils/helper'
+import Input from './common/Input'
 
 
 
@@ -24,7 +25,7 @@ const Header = () => {
     return (
         //navbar
         <>
-            <div className='bg-cover xl:bg-size-[100%_810px] bg-top bg-no-repeat' style={{backgroundImage:`url(${backgroundImage})`}} >
+            <div className='bg-cover xl:bg-size-[100%_810px] bg-top bg-no-repeat' style={{ backgroundImage: `url(${backgroundImage})` }} >
 
                 <nav className={`py-5  w-full fixed top-0  transition-all duration-200 ease-in-out z-20 ${scrolled ? 'bg-[#0B496F] shadow-lg ' : 'bg-transparent'}`}>
                     <div className='max-w-[1140px] mx-auto px-3 flex items-center justify-between'>
@@ -63,10 +64,7 @@ const Header = () => {
                                     Easily Compare<span className='font-bold'> Energy, Gas, And Internet</span> Plans</p>
                                 <p className='text-[#E6EDF1] font-normal text-base mt-[16px] mb-[42px]'>Find and switch to the best energy, gas, and internet plans with ease. Our platform simplifies your search, letting you compare providers and make informed decisions, all in one place.</p>
 
-                                <div className='bg-white rounded-tr-[50px] rounded-br-[50px] rounded-bl-[50px] p-[9px] flex w-full max-w-[467px]'>
-                                    <input type="text" placeholder='Start typing your address' className='w-full ml-[13px] outline-none border-none pr-[13px]' />
-                                    <Button buttonText={"Compare"} buttonClass='bg-[#00A8E8] sm:p-[18px] p-[14px] w-[147px] text-white hover:bg-[#09476C]' svgColor={'stroke-[white]'} />
-                                </div>
+                                <Input placeholderText={"Start typing your address"} buttonText={"Compare"} buttonClass="bg-[#00A8E8] text-white py-[15px] px-5" svgColor={'stroke-[white]'} />
                             </div>
                             <div>
                                 <p className='md:text-[38px] text-[34px] xl:text-[#003459] text-white font-normal xl:max-w-[548px]'>More than <span className='text-[48px] font-bold text-[#00A8E8]'>80,000</span>+ companies trust bill central </p>
@@ -74,7 +72,7 @@ const Header = () => {
                         </div>
                         <div className='xl:w-1/2  px-[12px] relative'>
                             <img src={headerImage} alt="image" className=' relative z-1 block mx-auto ' />
-                            <img src={dots} alt="image" className='absolute top-[-57px] max-md:right-0 max-lg:right-[13%] lg:right-[13%] min-[1140px]:right-[-15%] xl:right-[-15%]' />
+                            <img src={dots} alt="image" className='absolute top-[-57px] right-0 min-md:right-[9%] min-lg:right-[17%] xl:right-[-11%] ' />
                         </div>
                     </div>
                 </div>

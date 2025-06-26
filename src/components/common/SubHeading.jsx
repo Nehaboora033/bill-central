@@ -8,4 +8,4 @@ const SubHeading = ({ normalText, boldText, subHeading = "" , descriptionText ,d
     </>
   )
 }
-export default SubHeading
+export default SubHeading 

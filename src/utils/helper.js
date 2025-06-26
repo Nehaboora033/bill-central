@@ -90,6 +90,14 @@ export const FOOTER_LINKS = [
     { name: "FAQ" },
 ];
 
+export const FOOTER_LINKS2 = [
+    {
+        name: "Privacy Policy",
+    },
+    {
+        name: "Terms of Services",
+    },
+];
 export const SWITCH_DATA = [
     {
         image: switchImage1, alt: "image1",

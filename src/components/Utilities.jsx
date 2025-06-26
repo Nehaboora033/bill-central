@@ -15,7 +15,7 @@ const Utilities = () => {
                 <div className='flex gap-[24px] lg:flex-row flex-col'>
                     {/* left box */}
                     <div className='lg:max-w-[424px] bg-[#003459] p-[40px] flex  lg:flex-col max-sm:flex-col'>
-                        <img src={Review} alt="review" className='max-w-[277px] w-full'/>
+                        <img src={Review} alt="review" className='max-w-[277px] w-full' />
                         <div className='lg:my-0 my-auto'>
                             <p className='font-normal text-2xl text-white'>Tailored Recommendations</p>
                             <p className='font-normal text-base text-[#E5EBEE] mt-3'>Our platform analyzes your unique energy needs and preferences to suggest the best utility providers, ensuring you get the most personalized options available.</p>
@@ -33,7 +33,6 @@ const Utilities = () => {
                             </div>
                         ))
                         }
-
                     </div>
                 </div>
 

@@ -9,8 +9,8 @@ const FAQ = () => {
     return (
         <>
 
-            <div className='mx-auto max-w-[1140px] px-3 pb-[162px]'>
-                <SubHeading normalText={"Frequently Asked "} boldText={"Questions"} subHeading='text-center' descriptionText={"Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum"} description='mx-auto text-center max-w-[556px] mb-[52px]' />
+            <div className='mx-auto max-w-[1140px] px-3 '>
+                <SubHeading normalText={"Frequently Asked "} boldText={"Questions"} subHeading='text-center' descriptionText={"Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum"} description='mx-auto  text-center max-w-[556px] mb-[52px]' />
                 <div className='max-w-[916px] mx-auto px-3'>
 
                     {FAQ_DATA.map((item, index) => {

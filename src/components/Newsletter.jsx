@@ -2,19 +2,17 @@ import React from 'react'
 import SubHeading from './common/SubHeading'
 import Button from './common/Button'
 import newsletterBackground from '../assets/images/png/bg-Newsletter.png'
+import Input from './common/Input'
 
 const Newsletter = () => {
     return (
         <>
-            <div className='bg-[linear-gradient(to_bottom,_#FFFFFF_50%,_#043C64_50%)]' >
-                <div className='max-w-[1140px] rounded px-3 mx-[12px] min-[1170px]:mx-auto bg-no-repeat bg-cover py-[54px] ' style={{ backgroundImage: `url(${newsletterBackground})` }}>
-                    <SubHeading normalText={"Join Our "} boldText={"Newsletter"} subHeading='text-center' descriptionText={"Stay up to date with the latest deals, energy-saving tips, and exclusive offers! Sign up for our newsletter and never miss out on great savings opportunities again."} description='text-center max-w-[620px] mx-auto' />
-                    <div className='bg-white rounded-tr-[50px] rounded-br-[50px] rounded-bl-[50px] p-[9px] flex w-full max-w-[467px] mt-[38px] mx-auto'>
-                        <input type="text" placeholder='Enter your email' className='w-full ml-[13px] outline-none border-none pr-[13px]' />
-                        <Button buttonText={"Compare"} buttonClass='bg-[#007EA7] p-[12px] !w-[147px] text-white hover:bg-[#09476C]' svgColor={'stroke-[white]'} />
-                    </div>
-                </div>
+
+            <div className='max-w-[1140px] translate-y-1/2 rounded px-3 mx-[12px] min-[1170px]:mx-auto bg-no-repeat bg-cover py-[54px] ' style={{ backgroundImage: `url(${newsletterBackground})` }}>
+                <SubHeading normalText={"Join Our "} boldText={"Newsletter"} subHeading='text-center' descriptionText={"Stay up to date with the latest deals, energy-saving tips, and exclusive offers! Sign up for our newsletter and never miss out on great savings opportunities again."} description='text-center max-w-[620px] mx-auto mb-[38px]' />
+                <Input placeholderText={"Enter your email"} buttonText={"Submit"} buttonClass="bg-[#00A8E8] text-white py-[15px] px-5" svgColor={'stroke-[white]'} Inputclass={"mx-auto"} />
             </div>
+
         </>
 
     )

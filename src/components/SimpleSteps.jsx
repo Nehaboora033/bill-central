@@ -59,7 +59,7 @@ function Card({ item }) {
     return (
         <div className="overflow-hidden">
             <div className='group relative after:content-[""] after:absolute after:top-0 hover:after:-top-full after:left-0 after:w-full after:h-full after:bg-[#EAF9FFF0] after:transition-all after:duration-400 hover:after:opacity-0'>
-                <p className='absolute w-full z-[1] -rotate-90 font-normal  text-[20px] md:text-[25px] lg:text-[32px] leading-[1.1]  top-[70%] lg:top-[65%] left-1/2 -translate-1/2 group-hover:-top-full transition-all duration-400 whitespace-nowrap'>{item.title}</p>
+                <p className='absolute w-full z-[1] -rotate-90 font-normal max-[450px]:text-[22px] max-md:text-[23px] md:text-[24px] lg:text-[30px] leading-[1.1]  top-[70%] lg:top-[65%] left-1/2 -translate-1/2 group-hover:-top-full transition-all duration-400 whitespace-nowrap'>{item.title}</p>
                 <img src={item.image} alt="image" className='w-full' />
                 <div className='py-8 pl-[42px] pr-8 bg-[#003459] absolute group-hover:bottom-0 -bottom-full transition-all duration-200'>
                     <p className='font-normal text-[26px] leading-[1.1] text-[#FFFFFF] mb-[14px]'>{item.title}</p>

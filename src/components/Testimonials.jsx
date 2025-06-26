@@ -28,8 +28,8 @@ const Testimonials = () => {
         sliddesToScroll: 1,
         arrows: true,
         infinite: true,
-        autoplay: false,
-        autoplaySpeed: 0,
+        autoplay: true,
+        autoplaySpeed: 700,
         prevArrow: <PreviousArrow />,
         nextArrow: <NextArrow />,
 
@@ -44,12 +44,14 @@ const Testimonials = () => {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
+                    dots: true,
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
+                    dots: true,
                 }
             }
         ]
