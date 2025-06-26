@@ -72,7 +72,7 @@ const Header = () => {
                         </div>
                         <div className='min-[950px]:w-1/2 w-full  px-[12px] relative'>
                             <img src={headerImage} alt="image" className=' relative z-1 block mx-auto ' />
-                            <img src={dots} alt="image" className='absolute top-[-57px] right-0 min-[800px]:right-[12%] lg:right-0¸  xl:right-[-11%]' />
+                            <img src={dots} alt="image" className='absolute top-[-57px] right-0 min-[800px]:right-[12%] lg:right-0 xl:right-[-11%]' />
                         </div>
                     </div>
                 </div>
